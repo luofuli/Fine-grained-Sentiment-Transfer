@@ -2,6 +2,10 @@
 This repository contains the original implementation of the models presented in
 [Towards Fine-grained Text Sentiment Transfer](https://www.aclweb.org/anthology/P19-1194.pdf) (ACL 2019).
 
+<img width="220" height="220" src="image/example.jpg"></img>
+<img width="400" height="250" src="image/Seq2SentiSeq.jpg"></img>
+<img width="230" height="150" src="image/CycleRL.jpg"></img>
+
 ## Dependencies
 ```
 python==2.7
