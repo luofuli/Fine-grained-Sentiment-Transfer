@@ -6,6 +6,12 @@ This repository contains the original implementation of the models presented in
 <img width="400" height="250" src="image/Seq2SentiSeq.jpg"></img>
 <img width="230" height="150" src="image/CycleRL.jpg"></img>
 
+## Reproducibility
+**In order to help you quickly reproduce the existing works of fine-grained text sentiment transfer, we release the outputs of all models and the corresponding references.**
+
+- **Outputs**: Generated results (outputs) of **3 baselines** and **our model** are in the `outputs/` directory.
+- **References**: Human references are in the `data/yelp/reference.txt` file.
+
 ## Dependencies
 ```
 python==2.7
