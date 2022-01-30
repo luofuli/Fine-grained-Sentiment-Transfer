@@ -17,8 +17,14 @@ This repository contains the original implementation of the models presented in
 python==2.7
 numpy==1.14.2
 tensorflow==1.13.1
+(You might need to install tensorflow-gpu as well)
+Also even after installing tensorflow if it does not reflect in your virtual env it might be due to pip install issues so check the installation location using the appropriate commands
 OpenNMT-tf==1.15.0 
 ```
+
+## Data Formatting for Custom Dataset
+
+All the spaces in the different datafiles are tab spaces and not normal spaces and using normal spaces cause errors
 
 ## Quick Start
 
@@ -50,6 +56,7 @@ def load_args_from_yaml(dir):
     return args
 ```
 while importing UnsafeLoader from yaml might be a workaround. [Reference](https://github.com/yaml/pyyaml/issues/482#issuecomment-765607132)
+
 The final transffered results are in the `../tmp/output/yelp_final_*/` dir.
 
 ## Cite
