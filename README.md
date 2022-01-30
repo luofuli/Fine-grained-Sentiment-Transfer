@@ -42,6 +42,14 @@ After finishing the previous two steps, you can start the cycle reinforcement le
 ```
 python cycle_training.py --n_epoch 30
 ```
+
+Incase of any errors in this step due to YAML loader constructor namely this error - ```yaml.constructor.ConstructorError: could not determine a constructor for the tag 'tag:yaml.org,2002:python/object:argparse.Namespace'``` changing the load_args_from_yaml() function inside common_options.py to 
+```
+def load_args_from_yaml(dir):
+    args = load(open(os.path.join(dir, 'conf.yaml')), Loader=UnsafeLoader)
+    return args
+```
+while importing UnsafeLoader from yaml might be a workaround. [Reference](https://github.com/yaml/pyyaml/issues/482#issuecomment-765607132)
 The final transffered results are in the `../tmp/output/yelp_final_*/` dir.
 
 ## Cite
